@@ -31,11 +31,11 @@ class _HomePageState extends State<HomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       height: 100,
-                      child: Row(
-                        children: <Widget>[
-                          Image.network(''),
-                        ],
-                      )
+                      // child: Row(
+                      //   children: <Widget>[
+                      //     Image.network(''),
+                      //   ],
+                      // )
 
                     );
                   }
