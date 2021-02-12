@@ -23,17 +23,19 @@ class _HomePageState extends State<HomePage> {
         title: Text('News App'),
       ),
       body: Container(
-        child: FutureBuilder(
+        child: FutureBuilder<Welcome>(
           future: _newsModel,
           builder: (context, snapshot) {
 
               return ListView.builder(
+                // itemCount: snapshot.data.results.length,
                   itemBuilder: (context, index) {
+                  // var result = snapshot.data.results[index];
                     return Container(
                       height: 100,
                       // child: Row(
                       //   children: <Widget>[
-                      //     Image.network(''),
+                      //      Image.network(result.url),
                       //   ],
                       // )
 
